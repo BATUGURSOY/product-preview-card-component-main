@@ -61,6 +61,7 @@ body {
     padding-right: 60px;
     margin-bottom: 30px;
     line-height: 1;
+    max-width: 100%;
 
 }
 
@@ -141,6 +142,9 @@ body {
         margin: 2rem 1rem;
         flex-direction: column;
     }
+    .big {
+        max-width: 680px;
+    }
 
     .p-desc {
         font-size: 18px;
@@ -166,6 +170,6 @@ body {
     }
 
     .content .p-name {
-        padding-right: 0;
+        padding-right: 30px;
     }
 }
