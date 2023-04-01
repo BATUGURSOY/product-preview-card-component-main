@@ -1,0 +1,171 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.big {
+    max-width: 650px;
+    background-color: white;
+    display: flex;
+    border-radius: 0.5em;
+}
+
+.p-img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.p-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+}
+
+.content {
+    width: 50%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.p-title {
+    margin: auto;
+    margin-top: 15px;
+    letter-spacing: 1.2px;
+    font-weight: 500px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.p-name {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    font-size: auto;
+    padding-right: 60px;
+    margin-bottom: 30px;
+    line-height: 1;
+
+}
+
+.p-desc {
+    font-size: 15px;
+    padding-right: 50px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+    margin: auto;
+
+}
+
+.p-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    padding-bottom: 30px;
+}
+
+.p-price h1 {
+    margin-top: 30%;
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
+    color: hsl(158, 36%, 37%);
+
+}
+
+#upperp {
+    margin-bottom: 10px;
+}
+
+#lowerp {
+    margin-top: 15px;
+}
+
+.p-price p {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-top: auto;
+    padding: 1rem;
+    padding: bottom 10px;
+    ;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+
+}
+
+.button .icon-cart {
+    margin-right: 15px;
+}
+
+.button:hover {
+    background-color: hsla(158, 36%, 37%, 0.8);
+}
+
+@media screen and (max-width: 650px) {
+    .big {
+        margin: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .p-desc {
+        font-size: 18px;
+    }
+
+    .p-img {
+        width: 100%;
+        height: 40%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    .p-img img {
+        content: url("./images/image-product-mobile.jpg");
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content .p-name {
+        padding-right: 0;
+    }
+}
